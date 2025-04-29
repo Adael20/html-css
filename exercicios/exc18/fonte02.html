@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: "ada";
+            src: url("fonts/font-otf.otf");
+            src: url(fonts/font-ttf.ttf);
+            font-weight: normal;
+            font-style: normal;
+        }
+        /* 
+        Tipos de Format ()
+        - opentype (otf) 
+        - Truetype (ttf)
+        - embedded - opentype
+        - truetype-aat (Apple Advanced Typography)
+        - svg
+        (otf e ttf sao as mais usadas, e é compativel com todos os navegadores)
+        */
+        body {
+            font-family: "ada", Helvetica, sans-serif;
+            font-weight: normal;
+            font-style: normal;
+            font-size: medium;
+        }
+        h1 {
+            font-family: 'ada', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+            font-size: normal;
+        }
+        p {
+            font-family: 'ada', 'Arial Narrow', Arial, sans-serif;
+            text-align: justify;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Titulo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione aliquid sequi iure illum voluptatem fuga vel beatae soluta, rerum expedita, assumenda, quidem mollitia alias commodi! Tenetur sunt deleniti quasi facilis?</p>
+</body>
+</html>

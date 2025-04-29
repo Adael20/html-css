@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente criar esse site em varios dispositicos diferentes ou simplesmente e diminua o tamanho do seu navegador</p>
+    <!--possui varias regras para deixar a imagem adaptavel ao tamanho da tela de forma automatica, uma delas é atraves da (source media type.) preferencia voce comece adiconando a imagem grande no source, e as demais coloque acima da mesma (nao crei os proximos source em baixo, tem que ser acima.) acrescente sempre 50 pixes a mais no tamanho, pois ele faz com que nao fique sobra de barra de rolagem-->
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+<img src="imagens/foto-g.png" alt="Imagem Flexivel">
+
+    </picture>
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos reproduzir audios em HTML</p>
+    <audio src="midia/dark.mp3" controls></audio>
+    <!--Podemos colocar no projeto varios formatos para reconhecer os audios, pois existe outros formatos alem do mp3, como mpeg, ogg, wav, segue exemplos abaixo para entendimento, esse auto play ele começa a tocar sozinho apos abrir o site-->
+
+    <audio preload="metadata" controls loop>
+<source src="midia/dark.mp3" type="audio/mpeg">
+<source src="midia/dark.mp3" type="audio/ogg">
+<source src="midia/dark.mp3" type="audio/wav">
+
+    </audio>
+
+    
+</body>
+</html>
