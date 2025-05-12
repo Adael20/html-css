@@ -7,10 +7,20 @@
     <style>
         body {
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /* 
+            Obs: declaração unica nessa ordem, substitui todo o codigo acima.
+            Shorthand - background
+            color > image > position > repeat > [size] > attachment
+            */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
@@ -26,25 +36,58 @@
            
 
         }
-
         h1 {
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 20px;
             text-align: center;
         }
 
-        h1 p {
-            color: rgb(185, 87, 6);
+        h2 {
+            text-align: center;
+        }
+
+        p {
             text-align: justify;
         }
+
+        h3 {
+            text-align: center;
+        }
+
+        div > button {
+            background-color: black;
+            color: white;
+            border-radius: 15px;
+            
+            
+        }
+        
+       
+
+       
+       
     </style>
 </head>
 <body>
     <main>
-        <h1>
-            Teste de Imagens de Fundo
+        
+            <h1>Teste de Imagens de Fundo</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius porro quia exercitationem corrupti tempora doloribus magni rem. Commodi maxime sint assumenda magni soluta natus nam, totam placeat facere? Culpa, quae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab accusamus recusandae eius aut minus culpa. Provident soluta omnis delectus consectetur eum, in illo facere officia vero minus sint, autem eveniet. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste quasi nisi modi fugit optio harum quidem architecto velit magnam alias doloribus, nihil eligendi ipsum nostrum officia vitae cumque distinctio. Quis.</p>
-        </h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Mollitia obcaecati, laudantium iusto exercitationem, quibusdam similique temporibus esse ad blanditiis dignissimos corrupti deleniti quas aliquid eligendi autem amet maiores dolorem adipisci!</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, itaque! In omnis consectetur harum iure nemo, nisi tempora, voluptatibus esse blanditiis, sed nesciunt nihil quia laborum. Harum ullam unde adipisci.</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste suscipit explicabo esse labore obcaecati repellat accusantium quos totam dolorum expedita est ex, eligendi nulla quo voluptatem? Illo eligendi iure vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae voluptatem autem numquam dignissimos voluptate, nisi hic aspernatur et, consequatur tempore amet recusandae minus quis suscipit incidunt inventore veniam eveniet.</p>
+            
+            <h2>Aprendendo</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus assumenda harum eaque distinctio repellat quidem inventore ipsa ducimus tempora eveniet. Nesciunt laborum voluptate tenetur modi quisquam ratione ipsa temporibus sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa cupiditate facilis aut totam at enim quos velit nulla voluptatibus aspernatur odio incidunt explicabo consectetur labore beatae fugiat, accusamus repellendus sed!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, deserunt fuga placeat commodi enim, alias quisquam ea labore deleniti voluptates nihil. Nisi doloremque aperiam exercitationem fugit provident cupiditate reiciendis rem!</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam quaerat nulla eligendi non totam amet fugiat exercitationem deleniti illo in eum, cum et ex deserunt molestiae labore eos possimus culpa!</p>
+            <h3>Realizando Testes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro similique suscipit architecto minima placeat! Vel consectetur facilis eum veritatis esse minima quos pariatur, nesciunt itaque natus aperiam repudiandae quis laudantium.</p>
+
+            <div>
+                <button>
+                    Entrar
+                </button>
+            </div>
+        
     </main>
 </body>
 </html>
